@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from backend.services.razorpay_service import create_order, verify_signature
-from services.supabase_service import get_signed_url
+from backend.services.supabase_service import get_signed_url
 import requests
 
 app = FastAPI()
